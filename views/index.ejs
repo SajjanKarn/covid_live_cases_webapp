@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoronaVirus LiveTracker</title>
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container info">
+
+        <h1>Coronavirus Live Cases</h1>
+        <p class="text-white">Developer: Sajjan Karn</p>
+        <p class="text-white">Contact Number: +977 9812240832</p>
+        <p class="text-white">Follow Me On: </p>
+
+        <a href="https://www.facebook.com/sajjan.karn.378/" target="_blank" class="btn btn-raised fb"><i
+                class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/sajjan_404/" target="_blank" class="btn btn-raised insta"><i
+                class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/karn_sajjan" target="_blank" class="btn btn-raised tweet"><i class="fa fa-twitter"
+                aria-hidden="true"></i></a>
+
+    </div>
+    <div class="container_custom">
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Total Cases</th>
+                    <th scope="col">Total Recovered</th>
+                    <th scope="col">Total Deaths</th>
+                    <th scope="col">Total New Cases Today</th>
+                    <th scope="col">Total New Deaths Today</th>
+                    <th scope="col">Total Active Cases</th>
+                    <th scope="col">Total Serious Cases</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <% for (i = 1; i <= 182; i++) { %>
+                <tr>
+                    <th scope="row"> <%= FinalItem[`${i}`].ourid %> </th>
+                    <td><%= FinalItem[`${i}`].title %></td>
+                    <td><%= FinalItem[`${i}`].total_cases %></td>
+                    <td><%= FinalItem[`${i}`].total_recovered %></td>
+                    <td><%= FinalItem[`${i}`].total_deaths %></td>
+                    <td><%= FinalItem[`${i}`].total_new_cases_today %></td>
+                    <td><%= FinalItem[`${i}`].total_new_deaths_today %></td>
+                    <td><%= FinalItem[`${i}`].total_active_cases %></td>
+                    <td><%= FinalItem[`${i}`].total_serious_cases %></td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- bootstrap scripts are here -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+    <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+
+</body>
+
+</html>
