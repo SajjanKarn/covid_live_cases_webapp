@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/visualization/visual.css">
+</head>
+
+<body>
+
+    <div id='map'></div>
+
+
+
+    <!-- script is here -->
+    <script>
+
+        function updateMarker() {
+
+            mapboxgl.accessToken = 'pk.eyJ1Ijoic2FqamFuNDA0IiwiYSI6ImNrOWNqemNrcTA0cW4zZmx3eHI2OWVvNTYifQ.W9QWiSb_ViaJywA2p9ZyMg';
+
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/dark-v10',
+                zoom: 1,
+                center: [0, 20],
+            });
+            fetch("https://coronavirus-tracker-api.herokuapp.com/confirmed")
+                .then((response) => response.json())
+                .then((rsp) => {
+                    rsp.locations.forEach((items) => {
+                        let latitude = items.coordinates.lat;
+                        let longitude = items.coordinates.long;
+                        let cases = items.latest;
+
+                        console.log(latitude, longitude)
+
+                        if (cases > 255) {
+                            color = "rgb(255, 0, 0)"
+                        } else {
+                            color = `rgb(${cases}, 0, 0)`
+                        }
+
+                        new mapboxgl.Marker({
+                            draggable: false,
+                            color: color,
+                        })
+                            .setLngLat([longitude, latitude])
+                            .addTo(map);
+                    });
+
+                });
+        }
+
+        updateMarker();
+
+    </script>
+    <!-- 
+    <script src="./scripts/map.js"></script> -->
+
+</body>
+
+</html>

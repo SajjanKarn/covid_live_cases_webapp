@@ -5,14 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Muli', sans-serif;
-    color: #fff;
 }
-
-body {
-    background: rgb(23, 23, 82);
-    background: linear-gradient(90deg, rgba(23, 23, 82, 1) 0%, rgba(60, 60, 108, 1) 35%, rgba(53, 93, 101, 1) 100%);
-}
-
 
 .info {
     padding: 50px 0;
@@ -29,18 +22,48 @@ body {
 
 .fb {
     background-color: #3B5998;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    color: #fff;
 }
 
 .insta {
     background: linear-gradient(to right, #f9ed32, #ee2a7b);
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    color: #fff;
 }
 
 .tweet {
     background-color: #00ACEE;
-}
-
-.btn {
     padding: 15px 25px;
     font-size: 1.5rem;
     border-radius: 50%;
+    color: #fff;
+}
+
+table {
+    overflow: scroll;
+}
+
+@media (min-width: 992px) and (prefers-color-scheme: dark) {
+    body {
+        background: rgb(37, 48, 108);
+        background: linear-gradient(90deg, rgba(37, 48, 108, 1) 35%, rgba(57, 29, 76, 1) 79%, rgba(33, 31, 33, 1) 100%);
+    }
+
+    table,
+    h1 {
+        color: #fff;
+    }
+
+    .text-muted {
+        color: #fff !important;
+    }
+
+    .table thead th {
+        position: sticky;
+    }
 }
