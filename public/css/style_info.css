@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Da 2', cursive;
+    scroll-behavior: smooth;
+}
+
+/* ********** NAVBAR ********* */
+.navbar {
+    background-color: #18b0b0 !important;
+}
+
+.navbar-nav li {
+    margin: 0px 10px;
+    font-weight: 400;
+}
+
+.navbar-nav li a {
+    color: #fff;
+}
+
+
+/* ************* HEADER ********* */
+.header {
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+    color: #000;
+}
+
+.logo_corona img {
+    width: 100px;
+    height: 100px;
+    animation: go_corona 3s linear infinite;
+}
+
+.unity_people {
+    animation: unity_of_people 5s linear infinite;
+    margin: 50px auto;
+}
+
+.alert_h1 {
+    margin: 150px auto 10px;
+    font-weight: 400;
+}
+
+@keyframes go_corona {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes unity_of_people {
+    0% {
+        transform: scale(0.75);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(0.75);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(0.75);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+/* ********* ABOUT ********* */
+.about_coronavirus_h1 {
+    padding: 50px 0px;
+}
+
+.about_corona_text {
+    line-height: 1.6;
+}
+
+.text-about-coronavirus h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* *********** UPDATE ********** */
+.update_coronavirus h1 {
+    color: #d63447;
+}
+
+#Update {
+    padding: 50px 0px;
+}
+
+/* ************ SYMPTOMS ****** */
+.symptoms_of_coronavirus h1 {
+    padding: 50px 0px;
+}
+
+#Symptoms {
+    padding: 50px 0px;
+}
+
+.symptoms_img {
+    width: 100px;
+    height: 120px;
+}
+
+.symptoms_text {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+/* ************* PREVENTIONS ******* */
+.preventions h1 {
+    padding: 50px 0px;
+}
+
+#Preventions {
+    padding: 50px 0px;
+}
+
+.preventions_img {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.preventions_text {
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* *********contact_us********** */
+.contact_us {
+    padding: 50px 0px;
+}
+
+.contact_us h1 {
+    padding: 50px 0px;
+}
+
+
+/* footer //////////////// */
+#Footer {
+    background-color: #000;
+    color: #fff;
+}
+
+#Footer h4 {
+    margin: 0;
+    padding: 20px 10px;
+}
+
+#Footer p {
+    margin: 0;
+    line-height: 2;
+}
+
+
+/* media queries */
+@media (max-width: 475px) {
+    .unity_people {
+        width: 500px;
+        height: 500px;
+    }
+
+    .alert_h1 {
+        margin: 5px auto;
+        line-height: 0;
+        font-size: 1.3rem;
+    }
+
+    #Home {
+        height: 1000px;
+    }
+
+    /* about */
+    .about_coronavirus_h1 {
+        font-size: 1.5rem;
+    }
+
+    h1.coronavirus_what {
+        font-size: 1.3rem;
+        margin: 50px auto;
+    }
+
+    #Preventions {
+        padding: 10px 10px;
+    }
+
+    /* /////// PREVENTIVE MEASURES /////// */
+    .preventive_text {
+        font-size: 1.5rem;
+    }
+
+    .preventions_img {
+        width: 200px;
+        height: 200px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    /* //////// contact us /////// */
+    #ContactUs {
+        padding: 20px 10px;
+    }
+}
+
+
+@media(min-width: 768px) and (max-width: 988px) {
+    .preventions_img {
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+    }
+}
+
+@media (min-width: 476px) and (max-width: 767px) {
+    .alert_h1 {
+        margin: 10px auto;
+    }
+
+    #Home {
+        height: 1200px;
+    }
+
+    .preventions_img {
+        width: 150px;
+        height: 150px;
+        margin: 15px auto;
+    }
+
+    #ContactUs {
+        padding: 20px 15px;
+    }
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coronavirus</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style_info.css">
+</head>
+
+<body>
+
+    <!-- ********************* HEADER ********************** -->
+    <section id="Home">
+        <!-- **********navabr********* -->
+        <nav class="navbar navbar-expand-lg navbar-dark p-3">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="#">Coronavirus(COVID-19)</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Update">Update</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Symptoms">Symptoms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Preventions">Preventions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ContactUs">ContactUs</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- ******* HEADER ***** -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-10">
+                        <img src="images/unity_of_people.png" alt="unity" class="img-fluid unity_people">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-10 text-left">
+                        <h1 class="alert_h1">Let's Stay Safe & Fight Against Cor<span class="img-fluid logo_corona"><img
+                                    src="images/coronavirus_transparent.png" /></span>na Virus.</h1>
+                        <a href="#About" class="btn btn-lg btn-primary mt-5">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ************** ABOUT ********* -->
+    <section id="About" class="bg-light">
+        <div class="container text-center p-5">
+            <h1 class="mt-4 mb-4 about_coronavirus_h1">About Coronavirus(COVID-19).</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-left">
+                    <img src="images/about_coronavirus.jpg" alt="Corona" class="img-fluid about_coronavirus">
+                </div>
+                <div class="col-lg-6 col-md-6 text-left text-about-coronavirus">
+                    <h1 class="coronavirus_what">What is Coronavirus(COVID-19)?</h1>
+                    <p class="about_corona_text">Coronavirus disease (COVID-19) is an infectious disease caused by a new
+                        virus.</p>
+
+                    <p class="about_corona_text">The disease causes respiratory illness (like the flu) with symptoms
+                        such as a cough, fever, and
+                        in more severe cases, difficulty breathing. You can protect yourself by washing your hands
+                        frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with
+                        people who are unwell.</p>
+
+                    <p class="about_corona_text">Coronavirus disease spreads primarily through contact with an infected
+                        person when they cough or
+                        sneeze. It also spreads when a person touches a surface or object that has the virus on it, then
+                        touches their eyes, nose, or mouth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ******** UPDATE ********* -->
+
+    <section id="Update">
+        <div class="container update_coronavirus p-5">
+
+            <h1 class="text-center">UPDATES ON COVID-19</h1>
+            <p class="text-center text-muted">Here are some updates on covid-19.</p>
+
+            <div class="row">
+                <div class="col-lg-4 text-center mt-5">
+                    <h2><%= totalCases %> </h2>
+                    <span class="counter">Total Cases</span>
+                </div>
+                <div class="col-lg-4 text-center mt-5">
+                    <h2><%= totalDeaths %></h2>
+                    <span class="counter">Total Deaths</span>
+                </div>
+                <div class="col-lg-4 text-center mt-5">
+                    <h2><%= totalRecovered %></h2>
+                    <span class="counter">Total Recovered</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ********* SYMPTOMS ******** -->
+    <section id="Symptoms">
+        <div class="container symptoms_of_coronavirus">
+
+            <h1 class="text-center">Current Symptoms Of COVID-19</h1>
+
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-4 mt-4">
+                    <img src="images/cough.png" alt="cough" class="img-fluid symptoms_img" width="100" height="100">
+                    <p class="text-muted mt-3 symptoms_text">Cough</p>
+                </div>
+                <div class="col-lg-4 col-md-4 mt-4">
+                    <img src="images/runny_nose.png" alt="cough" class="img-fluid symptoms_img" width="120"
+                        height="100">
+                    <p class="text-muted mt-3 symptoms_text">Ruuny Nose</p>
+                </div>
+                <div class="col-lg-4 col-md-4 mt-4">
+                    <img src="images/fever.png" alt="cough" class="img-fluid symptoms_img" width="120" height="100">
+                    <p class="text-muted mt-3 symptoms_text">Fever</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-4 mt-4">
+                    <img src="images/cold.png" alt="cough" class="img-fluid symptoms_img" width="120" height="100">
+                    <p class="text-muted mt-3 symptoms_text">Cold</p>
+                </div>
+                <div class="col-lg-4 col-md-4 mt-4">
+                    <img src="images/tired_body.png" alt="cough" class="img-fluid symptoms_img" width="100" height="50">
+                    <p class="text-muted mt-3 symptoms_text">Tiredness</p>
+                </div>
+                <div class="col-lg-4 col-md-4 mt-4">
+                    <img src="images/difficulty_breathing.png" alt="cough" class="img-fluid symptoms_img" width="100"
+                        height="100">
+                    <p class="text-muted mt-3 symptoms_text">Difficulty Breathing(Severe Cases)</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ********* PREVENTIVE MEASURES ****** -->
+    <section id="Preventions" class="bg-light">
+        <div class="container preventions">
+            <h1 class="text-center preventive_text">Preventive Measures For CORONAVIRUS(COVID-19).</h1>
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4 mt-5 d-block m-auto">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="images/wash_hands.png" class="img-fluid preventions_img">
+                        </div>
+                        <div class="col-lg-8 ">
+                            <p class="text-muted preventions_text">Wash Your Hands Frequently and Often With Soap And
+                                Water Or Any
+                                Sanitizers.
+                                Soap and Sanitizers must contain alcohol upto 60%-90%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 mt-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="images/cover_nose.png" class="img-fluid preventions_img">
+                        </div>
+                        <div class="col-lg-8 ">
+                            <p class="text-muted preventions_text">Cover Your Nose While Coughing Or Sneezing. Make sure
+                                to keep a hanky
+                                with yourself to prevent
+                                other from being infected.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 mt-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="images/close_contact.png" class="img-fluid preventions_img">
+                        </div>
+                        <div class="col-lg-8 ">
+                            <p class="text-muted preventions_text">Avoid Close contact with those persons who are
+                                feeling unwell or have
+                                the symptoms of cornavirus like
+                                fever, cough, cold etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 mt-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="images/stay_home.png" class="img-fluid preventions_img">
+                        </div>
+                        <div class="col-lg-8 ">
+                            <p class="text-muted preventions_text">Stay home and self-isolate yourself from other in the
+                                household if you
+                                are feeling unwell.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 mt-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="images/news.png" class="img-fluid preventions_img">
+                        </div>
+                        <div class="col-lg-8 ">
+                            <p class="text-muted preventions_text">Stay informed by watching news & Follow the
+                                recommending practices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 mt-5">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="images/doctor.png" class="img-fluid preventions_img">
+                        </div>
+                        <div class="col-lg-8 ">
+                            <p class="text-muted preventions_text">If you have fever, cough and other symptoms of
+                                coronavirus then seek
+                                medical care early.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ********* contact us ************* -->
+
+    <section id="ContactUs">
+        <div class="container contact_us">
+            <h1 class="text-center">Contact US ASAP!</h1>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4">
+                    <img src="images/contact_us.png" alt="contact" class="img-fluid">
+                </div>
+
+                <div class="col-lg-8 col-md-8">
+                    <form>
+
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input id="username" type="text" class="form-control" placeholder="Enter Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="email_address">Email Address</label>
+                            <input type="email" id="email_address" class="form-control" placeholder="Enter Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile_number">Mobile Number</label>
+                            <input type="number" id="mobile_number" class="form-control"
+                                placeholder="Enter Mobile Number">
+                        </div>
+
+
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="cold" value="cold">
+                            <label class="form-check-label" for="cold">Cold</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="fever" value="fever">
+                            <label class="form-check-label" for="fever">Fever</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="breathing" value="breathing">
+                            <label class="form-check-label" for="breathing">Difficulty In Breathing</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="Weakness" value="Weakness">
+                            <label class="form-check-label" for="Weakness">Weakness</label>
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                            <label for="describe_feeling">Describe How You're Feeling.</label>
+                            <textarea name="feeling" placeholder="Describe How you're Feeling" class="form-control"
+                                id="describe_feeling" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ****************** SCRIPTS ARE HERE ********************** -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="scripts/jquery.counterup.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+
+
+</body>
+
+
+<footer id="Footer" class="text-center">
+    <h4>This Website is Developed By Sajjan Karn.</h4>
+    <h5>Copyright 2020 - 2025</h5>
+    <p>#STAY_HOME & #STAY_SAFE</p>
+</footer>
+
+</html>

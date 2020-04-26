@@ -22,6 +22,10 @@
         </a>
     </div>
 
+    <div class="info_corona mt-4">
+        <a href="/coronavirus_info" class="btn btn-raised btn-danger">Know More About COVID-19</a>
+    </div>
+
 </div>
 <div class="container_custom">
     <div class="table_responsive">
@@ -41,6 +45,17 @@
 
             </thead>
             <tbody>
+                <tr class="bg-warning">
+                    <th scope="row">0</th>
+                    <td>World</td>
+                    <td><%=totalCases %></td>
+                    <td style="background-color: #8ACA2B; color: #fff;"><%=totalRecovered %></td>
+                    <td><%=totalDeaths %></td>
+                    <td>+ <%=totalNewCasesToday %></td>
+                    <td style="background-color: red; color: #fff;">+ <%=totalNewDeathsToday %></td>
+                    <td><%=totalActiveCases %></td>
+                    <td><%=totalSeriousCases %></td>
+                </tr>
                 <% for (i = 1; i <= 182; i++) { %>
                 <tr>
                     <th scope="row"> <%= FinalItem[`${i}`].ourid %> </th>
@@ -49,8 +64,8 @@
                     <td><%= FinalItem[`${i}`].total_cases %></td>
                     <td><%= FinalItem[`${i}`].total_recovered %></td>
                     <td><%= FinalItem[`${i}`].total_deaths %></td>
-                    <td><%= FinalItem[`${i}`].total_new_cases_today %></td>
-                    <td><%= FinalItem[`${i}`].total_new_deaths_today %></td>
+                    <td>+ <%= FinalItem[`${i}`].total_new_cases_today %></td>
+                    <td>+ <%= FinalItem[`${i}`].total_new_deaths_today %></td>
                     <td><%= FinalItem[`${i}`].total_active_cases %></td>
                     <td><%= FinalItem[`${i}`].total_serious_cases %></td>
                 </tr>

@@ -5,5 +5,6 @@ const homeController = require("../controllers/ControlHomeRoutes");
 
 router.get("/", homeController.controlHome);
 router.get("/visualization", homeController.controlVisualization);
+router.get("/coronavirus_info", homeController.controlCoronavirus_info)
 
 module.exports = router;
